@@ -17,7 +17,7 @@ const questionNumber = [
     "Question Seven",
     "Question Eight",
     "Question Nine",
-    "Quesiton Ten"
+    "Question Ten"
 ]
 
 const questions = [
