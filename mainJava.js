@@ -105,9 +105,7 @@ function finalResult()
     const button1 = document.getElementById("finalResult");
     button1.style.display = "none";
 
-    //first if statement to calculate if there is any counts that are the same
-
-    //second nested if/else if statements to calculate which total has the highest count, overrides the previous if statement if one is found to be true
+    //second nested if/else if statements to calculate which total has the highest count
     if (aCount > bCount) 
     {
         if (aCount > cCount)
