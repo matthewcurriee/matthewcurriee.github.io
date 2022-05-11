@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="mainStyle.css">
+        <script src="mainJava.js"></script>
+
+        <title>What Coffee Shop Drink Are You Quiz!</title>
+
+    </head>
+
+    <header>
+
+        <img id="mainLogo" src="Images/quizLogo.png" alt="Quiz Master Logo">
+
+    </header>
+
+    <body>
+
+        <!-- Different divs being used to create three uneven columns-->
+        <div class="row">
+
+            <div class="column leftCol">
+
+            </div>
+
+            <div class="column centralCol">
+
+                <div id="topBox">
+
+                    <div id="heading">
+
+                        <h1>What Coffee Shop Drink Are You?</h1>
+
+                    </div>
+
+                    <div id="subheading">
+
+                        <h2>Have you wondered what coffee shop drink you would be? Well now you can find out with this tailored quiz!</h2>
+            
+                    </div>
+
+                </div>
+
+                <!-- Div for main activity (quiz)-->
+                <div id="main">
+
+                    <p id="introduction">To get started, click on the 'Start Quiz' button below! Have fun!</p>
+
+                    <!-- Button for starting the quiz-->
+                    <button id="startButton" onclick="startButton()">Start Quiz</button>
+
+                    <div id = "mainQuiz">
+
+                        <h3 id="questionNumber"></h3>
+
+                        <div id="mainQuestionBox">
+
+                            <p id="mainQuestion"></p>
+
+                        </div>
+
+                        <!-- Radio buttons for choices-->
+                        <div class="radio-bar">
+
+                            <!-- Use of divs to create columns within the main quiz to style choices-->
+                            <div class="row">
+
+                                <div class="column internalLeft">
+
+                                    <div class="a">
+
+                                        <input type="radio" id="answerOne" name="questions" value="answerOne">
+                                        <label for="answerOne"></label>
+
+                                        <input type="radio" id="answerThree" name="questions" value="answerThree">
+                                        <label for="answerThree"></label>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="column internalRight">
+
+                                    <div class="b">
+                            
+                                        <input type="radio" id="answerTwo" name="questions" value="answerTwo">
+                                        <label for="answerTwo"></label>
+
+                                        <input type="radio" id="answerFour" name="questions" value="answerFour">
+                                        <label for="answerFour"></label>
+
+                                    </div>
+
+                                </div>
+                        
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <br>
+                
+
+                    <!--Buttons for navigating the quiz-->
+                    <div id="quizButtons">
+
+                        <button id="submitAnswer" onclick="submitAnswer()">Submit Answer</button>
+
+                        <button id="nextQuestion" onclick="nextQuestion()">Next Question</button>
+
+                        <button id="finalResult" onclick="finalResult()">Get Result</button>
+
+                        <button id="resetQuiz" onclick="resetQuiz()">Reset</button>
+
+                    </div>
+
+    
+
+                    <!--Where results will show when quiz is complete-->
+                    <div id="mainResults">
+
+                        <h1 id="finalId"> </h1>
+
+                        <p id="finalPicture"> </p>
+
+                        <h2 id="finalText"> </h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="column rightCol">
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
