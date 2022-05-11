@@ -302,6 +302,19 @@ function nextQuestion()
     else {
         button1.style.display = "none";
     }
+    
+    const radioButton1 = document.getElementById("answerOne");
+    radioButton1.checked = false;
+
+    const radioButton2 = document.getElementById("answerTwo");
+    radioButton2.checked = false;
+
+    const radioButton3 = document.getElementById("answerThree");
+    radioButton3.checked = false;
+
+    const radioButton4 = document.getElementById("answerFour");
+    radioButton4.checked = false;
+
 
     //statement to update the questions each time the button is clicked - using arrays
     document.getElementById("questionNumber").innerHTML = questionNumber[i];
